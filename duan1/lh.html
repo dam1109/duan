@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang liên hệ - Web bán quần áo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="lh.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand">Quang Linh Store</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="indext.html">Trang chủ</a>
+      </li>
+      <li><a href="gt.html">Giới thiệu</a></li>
+      <li class="nav-item">
+        <a class="nav-link" href="sp.html">Sản phẩm</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="lh.html">Liên hệ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="giohang.html">Giỏ hàng</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-5">Liên hệ</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <h2 class="mb-4">Thông tin liên hệ</h2>
+      <p><i class="fas fa-map-marker-alt"></i> 123 đường ABC, Quận XYZ, Tp. HCM</p>
+      <p><i class="fas fa-phone-alt"></i> 0123456789</p>
+      <p><i class="fas fa-envelope"></i> contact@webbanquanao.com</p>
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-4">Để lại tin nhắn</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Họ và tên:</label>
+          <input type="text" class="form-control" id="name" placeholder="Nhập họ và tên" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Địa chỉ email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Nhập địa chỉ email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Tin nhắn:</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Nhập tin nhắn" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer class="bg-dark text-white mt-5 py-4">
+  <div class="container text-center">
+    <p>© 2021 Web bán quần áo</p>
+  </div>
+</footer>
+
+</body>
+</html>

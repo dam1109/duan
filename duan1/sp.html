@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang sản phẩm - Shop quần áo</title>
+	<link rel="stylesheet" type="text/css" href="sp.css">
+</head>
+<body>
+	<header>
+		<h1>Quang Linh Store</h1>
+		<nav>
+			<ul>
+				<li><a href="indext.html">Trang chủ</a></li>
+                <li><a href="gt.html">Giới thiệu</a></li>
+				<li><a href="sp.html">Sản phẩm</a></li>
+				<li><a href="lh.html">Liên hệ</a></li>
+                <li><a href="giohang.html">Giỏ hàng (0)</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="filter">
+		<h2>Lọc sản phẩm</h2>
+		<div class="filter-options">
+			<label for="color">Màu sắc</label>
+			<select id="color">
+				<option value="">Tất cả</option>
+				<option value="red">Đỏ</option>
+				<option value="green">Xanh lá</option>
+				<option value="blue">Xanh biển</option>
+			</select>
+
+			<label for="price">Giá</label>
+			<select id="price">
+				<option value="">Tất cả</option>
+				<option value="0-10">0 - 10 đô</option>
+				<option value="10-20">10 - 20 đô</option>
+				<option value="20-30">20 - 30 đô</option>
+			</select>
+
+			<label for="category">Loại sản phẩm</label>
+			<select id="category">
+				<option value="">Tất cả</option>
+				<option value="shirt">Áo</option>
+				<option value="pants">Quần</option>
+				<option value="dress">Váy</option>
+			</select>
+		</div>
+	</section>
+
+	<section class="products">
+		<div class="product">
+			<img src="img/welekete.jpg" alt="Áo Welekete">
+			<h3>Áo Welekete</h3>
+			<p class="price">319,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+
+		<div class="product">
+			<img src="img/polo-loicon.jpg" alt="ÁO polo Lôi con">
+			<h3>ÁO Polo Lôi Con</h3>
+			<p class="price">399,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+
+		<div class="product">
+			<img src="img/polo-logo-QL.jpg" alt="Áo polo logo QL">
+			<h3>Áo polo logo QL</h3>
+			<p class="price">399,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+
+		<div class="product">
+			<img src="img/t-shirt-loicon.jpg" alt="Áo t-shirt loi con">
+			<h3>Áo t-shirt Lôi COn</h3>
+			<p class="price">398,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/pololinhduong.jpg" alt="Áo polo linh duong">
+			<h3>Áo Polo Linh Dương</h3>
+			<p class="price">369,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/t-shirt-logo-QL.jpg" alt="Áo t-shirt logo QL">
+			<h3>Áo t-shirt logo QL</h3>
+			<p class="price">398,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/t-shirt-theu-co.jpg" alt="Áo t-shirt thue co">
+			<h3>Áo t-shirt Thêu Cờ</h3>
+			<p class="price">239,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/logobanlang.jpg" alt="Áo t-shirt logo banlang">
+			<h3>Áo t-shirt bản làng châu Phi</h3>
+			<p class="price">239,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/charmeuse.jpg" alt="Nước hoa ROSE CHARMEUSE">
+			<h3>Nước hoa ROSE CHARMEUSE</h3>
+			<p class="price">Giá: 179,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/bingembre.jpg" alt="Nước hoa Adop GINGEMGRE">
+			<h3>Nước hoa Adop GINGEMGRE</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product"> 
+			<img src="img/blue-suit.jpg" alt="Nước hoa Adop BLUE SUIT">
+			<h3>Nước hoa Adop BLUE SUIT</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/absolu.jpg" alt="Nước hoa Adop ABSOLU D'AMOUR">
+			<h3>Nước hoa Adop ABSOLU D'AMOUR</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/noir-jasmin.jpg" alt="Nước hoa Adop NOIR JASMIN">
+			<h3>Nước hoa Adop NOIR JASMIN</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/virile.jpg" alt="Nước hoa Adop L'EAU VIRILE">
+			<h3>Nước hoa Adop L'EAU VIRILE</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			<img src="img/my-rose.jpg" alt="Nước hoa Adop MY ROSE">
+			<h3>Nước hoa Adop MY ROSE</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			
+			<img src="img/rose-noire (2).jpg" alt="Nước hoa Adop ROSE NOIRE">
+			<h3>Nước hoa Adop ROSE NOIRE</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			
+			<img src="img/ceur-a-ceur.jpg" alt="Nước hoa Adop CEUR A CEUR">
+			<h3>Nước hoa Adop CEUR A CEUR</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			
+			<img src="img/lady-glitter.jpg" alt="Nước hoa Adop LADY GLITTER">
+			<h3>Nước hoa Adop LADY GLITTER</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		<div class="product">
+			
+			<img src="img/musc-blanc.jpg" alt="Nước hoa Adop MUSC BLANC">
+			<h3>Nước hoa Adop MUSC BLANC</h3>
+			<p class="price">Giá: 379,000 VND</p>
+			<button class="add-to-cart" onclick="addToCart()">Thêm vào giỏ hàng</button>
+		</div>
+		
+	</section>
+    <script src="sp.js"></script>
+	<footer>
+		<p> &copy; Dự án 1</p>
+	</footer>
+</body>
+</html>
